@@ -1,17 +1,13 @@
 package com.certificacion.SergueiBack.stepDefinitions.Siigo;
 
 import com.certificacion.SergueiBack.questions.Siigo.CodigoRespuesta;
-import com.certificacion.SergueiBack.questions.ValidateJsonStructure;
-import com.certificacion.SergueiBack.questions.ValidateSCOk;
 import com.certificacion.SergueiBack.tasks.Siigo.ConsultarUsuariosPageDos;
 import io.cucumber.java.es.Cuando;
 import io.cucumber.java.es.Dado;
 import io.cucumber.java.es.Entonces;
-import net.serenitybdd.rest.SerenityRest;
 import net.serenitybdd.screenplay.actors.OnStage;
 import net.serenitybdd.screenplay.actors.OnlineCast;
 import net.serenitybdd.screenplay.rest.abilities.CallAnApi;
-import org.hamcrest.Matchers;
 
 import static com.certificacion.SergueiBack.enums.ResourcesReqresAPI.*;
 import static net.serenitybdd.screenplay.GivenWhenThen.seeThat;

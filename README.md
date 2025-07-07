@@ -33,7 +33,7 @@ Este repositorio contiene la automatización de pruebas para la prueba técnica 
 
 ### 1️⃣ Clonar repositorio
 ```sh
-git clone git
+git clone git https://github.com/SergueiArellano/PTQAE_BACK_SSER.git 
 main: CI/CD logic
 ```
 
@@ -56,7 +56,7 @@ gradle aggregate
 ## 🧪 Ejecutando Pruebas desde Tags
 Puedes ejecutar pruebas especificas usando tags:
 ```sh
-gradle test -Dcucumber.options="--tags @SampleApp"
+gradle test -Dcucumber.options="--tags @RepResAPI"
 ```
 
 ## 📜  Escenarios Implementados
