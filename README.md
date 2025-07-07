@@ -1,47 +1,79 @@
-# API_Testing_PetStore
+# 🏨 Prueba Técnica QA Engineer Back
 
-# Proyecto Serenity Rest con Patrón Screenplay
+Este repositorio contiene la automatización de pruebas para la prueba técnica QA Engineer **Regres.in**. Utiliza **SerenityBDD**, **Selenium** con **Cucumber** y el patrón de diseño **Screenplay** para garantizar pruebas robustas y mantenibles.
 
+## 📌 Tecnologías Usadas
 
+- **Java 21**
+- **SerenityBDD**
+- **CucumberBDD**
+- **SerenityRest**
+- **Screenplay Pattern**
+- **Gradle 8.14**
 
-## Requisitos Previos
+## 📁 Estructura del Proyecto
 
-Asegúrate de tener instalado en tu máquina:
-- Java JDK 21 o superior
-- Gradle
+```
+📦 PTQAE_SSer
+├── 📂 src
+│   ├── 📂 main
+│   │   ├── 📂 java/com/certification/SergueiBack/app
+|   |   |   ├── 📂 controller
+│   │   │   ├── 📂 helpers
+│   │   │   ├── 📂 page
+│   ├── 📂 test
+│   │   ├── 📂 java/com/certification/SergueiBack/runners
+│   │   ├── 📂 resources/features
+├── 📜 build.gradle
+├── 📜 serenity.conf
+├── 📜 README.md
+```
 
-## Ejecución de Pruebas
+## 🚀 Instalación y Configuración
 
-1. Navega a la carpeta del proyecto:
+### 1️⃣ Clonar repositorio
+```sh
+git clone git
+main: CI/CD logic
+```
 
-2. Abre una terminal y ejecuta las pruebas con Gradle:
-    gradle clean test
+### 2️⃣ Configurar dependencias con Gradle
+```sh
+gradle clean build
+```
 
+### 3️⃣ Ejecutar Pruebas
 
-Las pruebas automatizadas se ejecutarán y podrás ver los resultados en la terminal.
+Para ejecutar pruebas desde terminal:
+```sh
+gradle clean test
+```
+Para generar reporte de Serenity:
+```sh
+gradle aggregate
+```
 
-## Estructura del Proyecto
+## 🧪 Ejecutando Pruebas desde Tags
+Puedes ejecutar pruebas especificas usando tags:
+```sh
+gradle test -Dcucumber.options="--tags @SampleApp"
+```
 
-- `src/test/java`: Contiene las clases de pruebas automatizadas en el patrón Screenplay.
-- `src/test/resources`: Contiene los archivos de configuración y datos de prueba.
-- `build/reports/tests`: Después de la ejecución, aquí encontrarás los informes de resultados.
+## 📜  Escenarios Implementados
+- **Ingreso exitoso al portal AppianCloud**
+- **Acceder a la sección de desarrollo del proyecto**
 
-## Configuración
+Una vez son ejecutados los casos, Serenity automáticamente genera el reporte detallado de pruebas. Para ver reporte, abrir:
+```sh
+target/site/serenity/index.html
+```
 
-- La configuración de Serenity BDD se encuentra en el archivo `serenity.properties`.
-- Las URLs de los servicios se pueden configurar en archivos de propiedades en `src/test/resources`.
+## 🛠 Mantenimiento y Contribución
+1. **Crea una nueva rama para tu mejora**: `git checkout -b feature/nueva-mejora`
+2. **Realiza cambios y haz commit**:`git commit -m 'Añadir nueva funcionalidad'`
+3. **Sube los cambios**: `git push origin feature/nueva-mejora`
+4. **Abre un Pull Request** 🛠
 
-## Personalización
+---
 
-Siéntete libre de personalizar este proyecto según tus necesidades. Puedes agregar más pruebas, escenarios, configuraciones, y adaptarlo para tu aplicación o API específica.
-
-## Documentación Adicional
-
-Para más detalles sobre Serenity BDD y el patrón Screenplay, consulta la documentación oficial:
-- [Serenity BDD](http://www.thucydides.info/docs/serenity-staging/)
-- [Screenplay Pattern](http://www.thucydides.info/docs/serenity-staging/#_the_screenplay_pattern)
-
-## Contribuciones
-
-Si encuentras errores o mejoras posibles, siéntete libre de contribuir a este repositorio enviando un pull request.
-
+📌 **Contacto:** Para inquietudes, enviar a [serguei.arellano@gmail.com](mailto:tu.email@example.com)
